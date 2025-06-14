@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fórmulas Úteis para Excel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #fff;
+      color: #000;  
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .divider {
+      width: 1000px;
+      height: 4px;
+      background-color: orange;
+      margin: 0.5rem auto 2rem;
+    }
+
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .column {
+      flex: 1 1 400px;
+      max-width: 500px;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .section-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      border-bottom: 2px solid #000;
+      padding-bottom: 0.2rem;
+    }
+
+    .item {
+      display: flex;
+      align-items: flex-start;
+      margin: 0.4rem 0;
+    }
+    
+    .tag {
+      min-width: 80px;
+      padding: 0.4rem 0.6rem;
+      margin-right: 0.7rem;
+      border-radius: 8px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .orange { background-color: #f57c00; }
+    .red { background-color: #d32f2f; }
+    .darkred { background-color: #af1616; }
+    .blue { background-color: #1976d2; }
+    .lightblue { background-color: #0288d1; }
+    .green { background-color: #2e7d32; }
+    .purple { background-color: #7b1fa2; }
+    .darkgray { background-color: #37474f; }
+  </style>
+</head>
+<body>
+  <h1>TABELA DE CONSULTA</h1>
+  <h2>FÓRMULAS ÚTEIS PARA EXCEL</h2>
+  <div class="divider"></div>
+
+  <div class="main">
+    <!-- Coluna esquerda -->
+    <div class="column">
+      <div class="section">
+        <div class="section-title">REFERÊNCIA DE CÉLULA</div>
+        <div class="item"><span class="tag orange">AI</span>Retorna a referência de célula absoluta como texto</div>
+        <div class="item"><span class="tag orange">LIN</span>Retorna o número da linha de uma referência</div>
+        <div class="item"><span class="tag orange">COL</span>Retorna o número da coluna de uma referência</div>
+        <div class="item"><span class="tag orange">DESLOC</span>Retorna uma referência deslocada de uma célula inicial</div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">CÁLCULOS FINANCEIROS</div>
+        <div class="item"><span class="tag darkred">VP</span>Calcula o valor presente de um investimento com base em uma taxa de juros e um período</div>
+        <div class="item"><span class="tag darkred">VF</span>Calcula o valor futuro de um investimento com base em uma taxa de juros e um número de períodos</div>
+        <div class="item"><span class="tag darkred">PGTO</span>Calcula o pagamento periódico de um empréstimo com base em uma taxa de juros e um número fixo de períodos</div>
+        <div class="item"><span class="tag darkred">TAXA</span>Calcula a taxa de juros de uma anuidade</div>
+        <div class="item"><span class="tag darkred">NPV</span>Calcula o valor presente líquido de um investimento com fluxos de caixa periódicos</div>
+     </div>
+
+
+      <div class="section">
+        <div class="section-title">CONDICIONAIS</div>
+        <div class="item"><span class="tag red">SE</span>Realiza uma avaliação lógica e retorna um valor se a condição for verdadeira e outro valor se for falsa</div>
+        <div class="item"><span class="tag red">SOMASE</span>Soma as células especificadas em um intervalo com base em determinados critérios</div>
+        <div class="item"><span class="tag red">CONT.SE</span>Conta as células em um intervalo que atendem a determinado critério</div>
+        <div class="item"><span class="tag red">MEDIA.SE</span>Calcula a média das células em um intervalo que atendem a determinado critério</div>
+        <div class="item"><span class="tag red">CONT.SES</span>Conta as células em um intervalo que atendem a vários critérios</div>
+        <div class="item"><span class="tag red">E</span>Retorna VERDADEIRO se todas as condições especificadas forem verdadeiras; caso contrário, retorna FALSO</div>
+        <div class="item"><span class="tag red">OU</span>Retorna VERDADEIRO se pelo menos uma das condições for verdadeira; retorna FALSO se todas forem falsas</div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">TEXTO</div>
+        <div class="item"><span class="tag orange">CONCATENAR</span>Combina o texto de várias células em uma única célula</div>
+        <div class="item"><span class="tag orange">ESQUERDA</span>Retorna um número específico de caracteres do início de uma cadeia de texto</div>
+        <div class="item"><span class="tag orange">DIREITA</span>Retorna um número específico de caracteres do fim de uma cadeia de texto</div>
+        <div class="item"><span class="tag orange">EXT.TEXTO</span>Retorna um número específico de caracteres a partir de uma posição em uma cadeia de texto</div>
+        <div class="item"><span class="tag orange">LOCALIZAR</span>Retorna a posição de um caractere ou substring dentro de uma cadeia de texto</div>
+      </div>
+    </div>
+
+    <!-- Coluna direita -->
+    <div class="column">
+      <div class="section">
+        <div class="section-title">PESQUISA E REFERÊNCIA</div>
+        <div class="item"><span class="tag green">PROCV</span>Procura valor em uma coluna e retorna correspondente</div>
+        <div class="item"><span class="tag green">PROCX</span>Procura valor em linha ou coluna, mais flexível que PROCV</div>
+        <div class="item"><span class="tag green">CORRESP</span>Procura um valor em uma coluna e retorna a posição relativa desse valor dentro do intervalo</div>
+        <div class="item"><span class="tag green">ÍNDICE</span>Retorna o valor de uma célula em uma determinada posição em uma tabela</div>
+        <div class="item"><span class="tag green">PROCURAR</span>Retorna o número da posição de uma cadeia de texto dentro de outra cadeia de texto</div>
+        <div class="item"><span class="tag green">ENDEREÇO</span>Retorna a referência de célula como texto, com base em números de linha e coluna</div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">ESTATÍSTICAS</div>
+        <div class="item"><span class="tag purple">CONT.NÚM</span>Conta o número de células que contêm valores numéricos em um intervalo</div>
+        <div class="item"><span class="tag purple">MÉDIA.SE</span>Calcula a média das células em um intervalo com base em um único critério</div>
+        <div class="item"><span class="tag purple">MEDIANA</span>Calcula o valor do meio de um conjunto de números</div>
+        <div class="item"><span class="tag purple">DESVPAD</span>Calcula o desvio padrão com base em uma população</div>
+        <div class="item"><span class="tag purple">QUARTIL</span>Retorna o valor do quartil específico de um conjunto de dados</div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">DATA E HORA</div>
+        <div class="item"><span class="tag darkgray">HOJE</span>Retorna a data atual</div>
+        <div class="item"><span class="tag darkgray">AGORA</span>Data e hora atual</div>
+        <div class="item"><span class="tag darkgray">DIAS360</span>Calcula o número de dias entre duas datas com base em um ano de 360 dias</div>
+        <div class="item"><span class="tag darkgray">DIATRABALHOTOTAL</span>Número de dias úteis entre datas</div>
+        <div class="item"><span class="tag darkgray">TEXTO</span>Converte um número em formato de data ou hora para texto personalizado</div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">MATEMÁTICA BÁSICA</div>
+        <div class="item"><span class="tag blue">SOMA</span>Soma valores de um intervalo</div>
+        <div class="item"><span class="tag blue">MEDIA</span>Calcula a média dos valores em um intervalo</div>
+        <div class="item"><span class="tag blue">MAXIMO</span>Retorna o maior valor em um intervalo</div>
+        <div class="item"><span class="tag blue">MINIMO</span>Retorna o menor valor em um intervalo</div>
+        <div class="item"><span class="tag blue">MAIOR</span>Retorna o k-ésimo maior valor em um intervalo (onde k é a posição na ordem decrescente, por exemplo, 2º maior valor)</div>
+        <div class="item"><span class="tag blue">MENOR</span>Retorna o k-ésimo menor valor em um intervalo (onde k é a posição na ordem crescente, por exemplo, 3º menor valor)</div>
+        <div class="item"><span class="tag blue">CONT.VAZIO</span>Conta o número de células vazias em um intervalo</div>
+        <div class="item"><span class="tag blue">CONT.VALORES</span>Conta o número de células com valores em um intervalo</div>
+      </div>
+    </div>
+  </div> 
+</body> 
+</html> 
